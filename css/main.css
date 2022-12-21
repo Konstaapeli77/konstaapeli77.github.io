@@ -5,7 +5,7 @@
 /***** Global *****/
 /* Body */
 body {
-    background: #F5F4EF url('../images/bg.png');
+    background: #a2defa url('../images/bg.png');
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -83,7 +83,7 @@ table {margin: .5em auto 1.5em auto; width: 98%;}
 
   /* Tbody */
   tbody td {padding: .5em .4em;}
-  tbody th {background-color: #e0dedf;}
+  tbody th {padding: .5em .4em; background-color: #e0dedf;}
 
   tbody .alt td {}
   tbody .alt th {}
@@ -131,7 +131,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
   /* Main Nav */
   #banner nav {
-    background: #64c1ff;
+
+    background: rgba(136, 212, 255, 0.5);
     font-size: 1.143em;
     height: 40px;
     line-height: 30px;
@@ -139,13 +140,18 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
     padding: 0;
     text-align: center;
     width: 800px;
-
+    
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
   }
 
-  #banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+  #banner nav ul {
+    list-style: none; 
+    margin: 0 auto; 
+    width: 800px;
+    padding: 0;
+  }   
   #banner nav li {float: left; display: inline; margin: 0;}
 
   #banner nav a:link, #banner nav a:visited {
@@ -157,7 +163,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   }
   #banner nav a:hover, #banner nav a:active,
   #banner nav .active a:link, #banner nav .active a:visited {
-    background: #8fe2de;
+    background: #2596ff;
     color: #fff;
     text-shadow: none !important;
   }
@@ -189,9 +195,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   
   #featured figure {
     border: 2px solid #eee;
-    float: right;
+    float: center;
     margin: 0.786em 2em 0 5em;
-    width: 248px;
+    width: 420px;
   }
   #featured figure img {display: block; float: right;}
   
@@ -231,9 +237,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 
 #extras a:link, #extras a:visited {
-  color: #444;
+  color: rgb(209, 216, 255);
   display: block;
-  border-bottom: 1px solid #F4E3E3;
+  border-bottom: 1px solid #cfdaff;
   text-decoration: none;
   padding: .3em .25em;
 }
@@ -307,7 +313,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
 /* Blog */
 .hentry {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgb(11, 43, 146);
     padding: 1.5em 0;
   }
   li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
@@ -344,4 +350,27 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
       #banner h1 {line-height: 1;} /* Fixes Logo overlapping */
 
+.home {
+    background-color: #c4e5ff;
 
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #6ac3ff 0%, #0487df 100%);
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+  }
+
+  .background{
+    color: #999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
